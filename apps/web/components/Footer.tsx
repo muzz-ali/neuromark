@@ -71,6 +71,7 @@ const Footer: React.FC = () => {
     { label: 'ENGINEERING_TEAMS', href: '/team' },
     { label: 'EVENT_REGISTRY', href: '/events' },
     { label: 'TECHNICAL_BLOGS', href: '/blogs' },
+    { label: 'RESOURCE_HUB', href: '/resources' },
     { label: 'CONTACT_POINT', href: '/contact' },
   ];
 
