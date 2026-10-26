@@ -365,7 +365,7 @@ const FacultyCoordinator = () => {
           <div className="flex items-center justify-center gap-3 md:gap-4 mb-5 md:mb-6">
             <div className="h-px w-10 md:w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
             <p className="text-gray-400 text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.2em] md:tracking-[0.3em] font-light uppercase">
-              ACM MJCET Student Chapter
+              NeuroMark Student Chapter
             </p>
             <div className="h-px w-10 md:w-16 bg-gradient-to-l from-transparent to-blue-500"></div>
           </div>

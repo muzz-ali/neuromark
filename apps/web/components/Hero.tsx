@@ -399,7 +399,7 @@ export default function Hero() {
           </h1>
           <div className="mt-8">
             <img
-              alt="ACM Logo"
+              alt="NeuroMark Agency"
               className="h-auto w-48 md:w-64"
               src="/logo_without_bg.png"
               style={{

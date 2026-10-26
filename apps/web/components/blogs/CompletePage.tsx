@@ -543,14 +543,14 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
               </div>
             </div> */}
 
-            {/* ACM Info Box */}
+            {/* NeuroMark Info Box */}
             <div className="rounded-lg border-2 border-slate-900 bg-slate-50 p-5">
               <div className="mb-3 flex size-12 items-center justify-center rounded-lg bg-slate-900 font-bold text-white">
-                ACM
+                NeuroMark
               </div>
-              <h3 className="mb-2 font-bold text-slate-900">ACM MJCET</h3>
+              <h3 className="mb-2 font-bold text-slate-900">NeuroMark Agency</h3>
               <p className="mb-4 text-sm leading-relaxed text-slate-700">
-                Association for Computing Machinery - MJCET Student Chapter. Empowering future tech leaders.
+                AI & Digital Agency empowering future tech leaders.
               </p>
               <button onClick={() => window.location.href = "/join"} className="w-full rounded-lg bg-slate-900 px-4 py-2.5 font-semibold text-white transition-colors hover:bg-slate-800">
                 Join Our Community
@@ -564,7 +564,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-slate-50 py-8">
         <div className="mx-auto max-w-7xl px-4 text-center text-sm text-slate-600">
-          <p>&copy; 2025 ACM MJCET Student Chapter. All rights reserved.</p>
+          <p>&copy; 2025 NeuroMark Agency. All rights reserved.</p>
         </div>
       </footer>
 

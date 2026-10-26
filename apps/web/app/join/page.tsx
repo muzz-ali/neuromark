@@ -53,7 +53,7 @@ export default function JoinPage() {
 					<div className="absolute inset-0 -z-10 bg-gradient-to-b from-white/10 to-transparent blur-3xl" />
 					<p className="text-neutral-400">
 						We&apos;re crafting an application and interview experience to spotlight
-						your passion and impact at ACM MJCET.
+						your passion and impact at NeuroMark.
 					</p>
 				</div>
 			</section>

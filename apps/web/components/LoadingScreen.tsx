@@ -87,7 +87,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           >
             <Image
               src="/logo_without_bg.png"
-              alt="ACM MJCET Logo"
+              alt="NeuroMark Agency Logo"
               width={200}
               height={93}
               className="w-40 h-auto md:w-48 lg:w-52"

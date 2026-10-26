@@ -22,8 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: 'ACM MJCET Student Chapter',
-  description: 'Official website of the ACM Student Chapter at MJCET — fostering computing excellence, technical innovation, and community among students.',
+  title: 'NeuroMark | Professional Website Design Agency',
+  description: 'NeuroMark builds professional websites for local and growing businesses, helping them establish a strong online presence with modern, high-performance websites.',
 }
 
 export default function RootLayout({
@@ -33,9 +33,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${manrope.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans antialiased text-white bg-background selection:bg-neon-violet/30 selection:text-white">
-        <LenisProvider>{children}</LenisProvider>
+      <body className="font-sans antialiased text-white bg-background selection:bg-tech-blue/30 selection:text-white">
+        <LenisProvider>
+          {children}
+        </LenisProvider>
       </body>
     </html>
-  )
+  );
 }

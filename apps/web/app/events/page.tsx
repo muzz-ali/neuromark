@@ -25,11 +25,18 @@ export interface Event {
         closing?: string;
         impactAndBenefits?: string;
         conclusion?: string;
-}
-
+    }
+    // Resources/documents associated with this event.
+    // Add entries here; the NeuroMark team will populate real URLs later.
+    resources?: {
+      name: string;
+      description: string;
+      url: string;
+    }[];
   }
 
 export const upcomingEvents: Event[] = [
+
 ];
 
 export const pastEvents: Event[] = [
@@ -43,7 +50,7 @@ export const pastEvents: Event[] = [
     imageUrl: "/assets/Events/Huntopia.png",
     About: {
       introduction:
-        "Huntopia is a thrilling treasure hunt event organized by ACM MJCET, offering participants an adventurous experience through puzzles, clues, and campus-wide exploration.",
+        "Huntopia is a thrilling treasure hunt event organized by NeuroMark, offering participants an adventurous experience through puzzles, clues, and campus-wide exploration.",
       rounds:
         "Round 1: Head Rush — guessing actions and clues.\nRound 2: Wrong It Up — wrong answers only challenge.\nRound 3: Decode and Discover — treasure hunt across campus.",
       proceeding:
@@ -68,7 +75,7 @@ export const pastEvents: Event[] = [
     imageUrl: "/assets/Events/HelloWorld25.jpg",
     About: {
       introduction:
-        "Hello World 4.0 was ACM MJCET's signature event designed to help students explore modern technologies, career paths, and real-world applications.",
+        "Hello World 4.0 was NeuroMark's signature event designed to help students explore modern technologies, career paths, and real-world applications.",
       proceeding:
         "Sessions covered diverse domains including Web Development, AI/ML, Cybersecurity, Game Development, AR/VR, Blockchain, Cloud, and DevOps.",
       highlights:
@@ -91,7 +98,7 @@ export const pastEvents: Event[] = [
     imageUrl: "/assets/Events/DesignVerse.png",
     About: {
       introduction:
-        "DesignVerse was a creative competition by ACM MJCET focusing on innovation in design and deployment across multiple domains. It encouraged participants to blend aesthetics and functionality using modern tools.",
+        "DesignVerse was a creative competition by NeuroMark focusing on innovation in design and deployment across multiple domains. It encouraged participants to blend aesthetics and functionality using modern tools.",
       proceeding:
         "The event featured categories like poster design, animation, and web design. Participants showcased their creative vision and technical execution under time constraints.",
       highlights:
@@ -114,7 +121,7 @@ export const pastEvents: Event[] = [
     imageUrl: "/assets/Events/AI_Unlocked.png",
     About: {
       introduction:
-        "AI Unlocked was a hands-on workshop and competition organized by ACM MJCET, focusing on simplifying Artificial Intelligence for students.",
+        "AI Unlocked was a hands-on workshop and competition organized by NeuroMark, focusing on simplifying Artificial Intelligence for students.",
       proceeding:
         "The event consisted of a morning workshop followed by a practical competition, guiding participants through AI tool usage and implementation.",
       highlights:
@@ -137,7 +144,7 @@ export const pastEvents: Event[] = [
     imageUrl: "/assets/Events/TrialsOfTriump.png",
     About: {
       introduction:
-        "Trials of Triumph was a thrilling multi-round competition organized by ACM MJCET designed to test wit, teamwork, and problem-solving under pressure.",
+        "Trials of Triumph was a thrilling multi-round competition organized by NeuroMark designed to test wit, teamwork, and problem-solving under pressure.",
       rounds:
         "Round 1: Trivia Toss — fun quiz round.\nRound 2: Mystic Minds — identity guessing challenge.\nRound 3: Cypher Hunt — on-campus treasure chase.",
       proceeding:
@@ -149,7 +156,7 @@ export const pastEvents: Event[] = [
       impactAndBenefits:
         "Enhanced participants' critical thinking, communication, and teamwork through gamified learning.",
       conclusion:
-        "Trials of Triumph delivered an unforgettable mix of fun, competition, and intellect at MJCET.",
+        "Trials of Triumph delivered an unforgettable mix of fun, competition, and intellect at NeuroMark.",
     },
   },
   {
@@ -162,7 +169,7 @@ export const pastEvents: Event[] = [
     imageUrl: "/assets/Events/HelloWorld24.png",
     About: {
       introduction:
-        "Hello World! was a flagship ACM MJCET event introducing students to diverse technology domains and industry experts.",
+        "Hello World! was a flagship NeuroMark event introducing students to diverse technology domains and industry experts.",
       proceeding:
         "Guest Speaker Mohammed Saif ul Hasan from ServiceNow discussed multiple domains such as Web Development, Game Development, Robotics, and AI.",
       highlights:
@@ -185,7 +192,7 @@ export const pastEvents: Event[] = [
     imageUrl: "/assets/Events/SofiVerse.png",
     About: {
       introduction:
-        "SoFiVerse was an inspiring knowledge-sharing event by ACM MJCET focused on innovation and entrepreneurship in the tech world.",
+        "SoFiVerse empowered participants with motivation and direction to turn tech ideas into impactful ventures.",
       proceeding:
         "Speakers shared their startup journeys, product-building experiences, and lessons from failures and successes in the evolving digital market.",
       highlights:
@@ -222,20 +229,20 @@ useGSAP(() => {
         })
 
   // Image Animation
-  masterTl.to(imageRef.current, {
+    masterTl.to(imageRef.current, {
     scale: 0.8,
     duration: 1,
     ease: "none",
   });
 
   // Upcoming Events Title Animation
-  masterTl.fromTo(upcomingEventsTitle.current, {
+    masterTl.fromTo(upcomingEventsTitle.current, {
     y: 100,
     ease: "none",
   }, {y: 0, opacity: 1, ease: "none"}, '0');
 
   // Events Cards Animation
-  masterTl.fromTo(UpcomingEventGridItems, {
+    masterTl.fromTo(UpcomingEventGridItems, {
     y: 100,
     ease: "none"
   }, {y: 0, opacity: 1, ease: "none", stagger: 0.2}, '0.1');
@@ -243,13 +250,13 @@ useGSAP(() => {
   masterTl.addLabel('upcomingEventsEnd', '>');
 
   // Upcoming Events Title Animation
-  masterTl.fromTo(pastEventsTitle.current, {
+    masterTl.fromTo(pastEventsTitle.current, {
     y: 100,
     ease: "none",
   }, {y: 0, opacity: 1, ease: "none"}, 'upcomingEventsEnd');
 
     // Events Cards Animation
-  masterTl.fromTo(pastEventsGridItems, {
+    masterTl.fromTo(pastEventsGridItems, {
     y: 100,
     opacity: 0,
     ease: "none",
@@ -294,116 +301,112 @@ useGSAP(() => {
 
     // Kill ScrollTriggers (prevents memory leaks)
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  };
-}, []);
+  }
+}, [])
 
-    
   return (
     <>
     <SpotlightBackground>
     <Navbar />
-    
+
       <div ref={containerRef} className="min-h-screen w-full overflow-hidden bg-gradient-to-br text-white">
         <section className="h-[80vh] my-12 p-2 flex justify-center">
-        <div ref={imageRef} className="relative w-full h-full overflow-hidden rounded-lg shadow-lg shadow-blue-400/20">
+          <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg shadow-blue-400/20">
             <img id='coverImage' className='object-cover blur-sm w-full h-full' src="assets/Events/Team.png" alt="Cover Image" />
             <div className='absolute bottom-0 top-0 left-0 right-0 flex flex-col justify-center items-center text-center text-white bg-opacity-60'>
-          <h1 className="mb-8 text-5xl font-black uppercase tracking-tight text-white text-8xl">
-            <span
-              className="bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent"
-              style={{
-                textShadow: "0 0 60px rgba(255, 255, 255, 0.1)",
-              }}
-            >
-              Tech &
-            </span>
-            <br />
-            <span className="bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent">Fun</span>
-          </h1>
+              <h1 className="mb-8 text-5xl font-black uppercase tracking-tight text-white text-8xl">
+                <span
+                  className="bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent"
+                  style={{
+                    textShadow: "0 0 60px rgba(255, 255, 255, 0.1)",
+                  }}
+                >
+                  Tech &
+                </span>
+                <br />
+                <span className="bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent">Fun</span>
+              </h1>
             </div>
           </div>
         </section>
-    <section className="text-center flex flex-col items-center justify-center px-6 mb-16">
-      <div>
-        <h1 ref={upcomingEventsTitle} className="opacity-0 text-4xl font-bold mb-12 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent">Upcoming Events</h1>
+        <section className="text-center flex flex-col items-center justify-center px-6 mb-16">
+          <div>
+            <h1 ref={upcomingEventsTitle} className="opacity-0 text-4xl font-bold mb-12 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent">Upcoming Events</h1>
 
-        {/* ✅ Upcoming Event Cards Grid */}
-        <div className="grid gap-6 w-full sm:grid-cols-2 lg:grid-cols-3">
-          {
-          (upcomingEvents.length === 0) ? (
-            <div
-                className="upcomingEventsGridItems opacity-0 relative h-96 w-80 rounded-2xl shadow-lg overflow-hidden backdrop-blur-sm cursor-pointer duration-300 border border-gray-700 bg-black/60 hover:border-blue-600"
-              >
-                <img
-                src="/assets/Events/ComingSoon.png"
-                alt="No Upcoming Events"
-                className="absolute inset-0 object-cover h-full w-full"
-              />
-              <div className='absolute bottom-0 flex flex-col w-full p-4' style={{
-                background: 'linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%)'
-              }}>
+            {/* ✅ Upcoming Event Cards Grid */}
+            <div className="grid gap-6 w-full sm:grid-cols-2 lg:grid-cols-3">
+              {
+              (upcomingEvents.length === 0) ? (
+                <div
+                    className="upcomingEventsGridItems opacity-0 relative h-96 w-80 rounded-2xl shadow-lg overflow-hidden backdrop-blur-sm cursor-pointer duration-300 border border-gray-700 bg-black/60 hover:border-blue-600"
+                  >
+                    <img
+                    src="/assets/Events/ComingSoon.png"
+                    alt="No Upcoming Events"
+                    className="absolute inset-0 object-cover h-full w-full"
+                  />
+                  <div className='absolute bottom-0 flex flex-col w-full p-4' style={{
+                    background: 'linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%)'
+                  }}>
+                  </div>
+                </div>
+              ) : (
+              upcomingEvents.map((event) => (
+                  <div
+                    className="upcomingEventsGridItems opacity-0 relative h-96 w-80 rounded-2xl shadow-lg overflow-hidden backdrop-blur-sm cursor-pointer duration-300 border border-gray-700 bg-black/60 hover:border-blue-600"
+                    onClick={() => router.push(`/events/${event.id}?upcoming=${event.upcoming}`)}
+                    key={event.id}
+                  >
+                    <img
+                    src={event.imageUrl}
+                    alt={event.title}
+                    className="absolute inset-0 object-cover h-full w-full"
+                  />
+                  <div className='absolute bottom-0 flex flex-col w-full p-4' style={{
+                    background: 'linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%)'
+                  }}>
+                    <h2 className="text-3xl font-bold mb-2">{event.title}</h2>
+                  </div>
+                </div>
+              )))}
             </div>
+          </div>
+        </section>
+        <section className="text-center flex flex-col items-center justify-center px-6 mb-16">
+          <div>
+            <h1 ref={pastEventsTitle} className="opacity-0 text-4xl font-bold mb-12 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent">Past Events</h1>
+
+            {/* ✅ Event Cards Grid */}
+            <div className="grid gap-6 w-full sm:grid-cols-2 lg:grid-cols-3">
+
+              {pastEvents.map((event) => (
+                <div
+                    className="pastEventsGridItems opacity-0 relative h-96 w-80 rounded-2xl shadow-lg overflow-hidden backdrop-blur-sm cursor-pointer duration-300 border border-gray-700 bg-black/60 hover:border-blue-600 "
+                    onClick={() => router.push(`/events/${event.id}?upcoming=${event.upcoming}`)}
+                    key={event.id}
+                  >
+                    <img
+                    src={event.imageUrl}
+                    alt={event.title}
+                    className="absolute inset-0 object-cover h-full w-full"
+                  />
+                  <div className='absolute bottom-0 h-[20%] flex flex-col w-full p-4' style={{
+                    background: 'linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%)'
+                  }}>
+                    <h2 className="text-3xl font-bold mb-2">{event.title}</h2>
+                  </div>
+                </div>
+              ))}
             </div>
-          ) : (
-          upcomingEvents.map((event) => (
-              <div
-                className="upcomingEventsGridItems opacity-0 relative h-96 w-80 rounded-2xl shadow-lg overflow-hidden backdrop-blur-sm cursor-pointer duration-300 border border-gray-700 bg-black/60 hover:border-blue-600"
-                onClick={() => router.push(`/events/${event.id}?upcoming=${event.upcoming}`)}
-                key={event.id}
-              >
-                <img
-                src={event.imageUrl}
-                alt={event.title}
-                className="absolute inset-0 object-cover h-full w-full"
-              />
-              <div className='absolute bottom-0 flex flex-col w-full p-4' style={{
-                background: 'linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%)'
-              }}>
-                <h2 className="text-3xl font-bold mb-2">{event.title}</h2>
-            </div>
-            </div>
-          )))}
-        </div>
+          </div>
+        </section>
       </div>
-    </section>
-        {/* Past Events */}
-            <section className="text-center flex flex-col items-center justify-center px-6 mb-16">
-      <div>
-        <h1 ref={pastEventsTitle} className="opacity-0 text-4xl font-bold mb-12 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent">Past Events</h1>
 
-        {/* ✅ Event Cards Grid */}
-        <div className="grid gap-6 w-full sm:grid-cols-2 lg:grid-cols-3">
-
-          {pastEvents.map((event) => (
-            <div
-                className="pastEventsGridItems opacity-0 relative h-96 w-80 rounded-2xl shadow-lg overflow-hidden backdrop-blur-sm cursor-pointer duration-300 border border-gray-700 bg-black/60 hover:border-blue-600 "
-                onClick={() => router.push(`/events/${event.id}?upcoming=${event.upcoming}`)}
-                key={event.id}
-              >
-                <img
-                src={event.imageUrl}
-                alt={event.title}
-                className="absolute inset-0 object-cover h-full w-full"
-              />
-              <div className='absolute bottom-0 h-[20%] flex flex-col w-full p-4' style={{
-                background: 'linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%)'
-              }}>
-                <h2 className="text-3xl font-bold mb-2">{event.title}</h2>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-
-    </div>
-    
     </SpotlightBackground>
     <Footer />
 
     </>
   );
-};
+}
 
 export default EventsLandingPage;

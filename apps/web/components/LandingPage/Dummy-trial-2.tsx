@@ -82,7 +82,7 @@ const DummyPage: React.FC<DummyPageProps> = ({ handleLoading }) => {
       tempCtx.textBaseline = "middle";
 
       tempCtx.fillStyle = "white";
-      tempCtx.fillText("ACM MJCET", 600, 150);
+      tempCtx.fillText("NeuroMark", 600, 150);
 
       const points: { x: number; y: number; z: number }[] = [];
 
@@ -368,10 +368,10 @@ const DummyPage: React.FC<DummyPageProps> = ({ handleLoading }) => {
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillStyle = "rgba(245, 246, 255, 0.92)";
-        ctx.fillText("ACM MJCET", width / 2, height / 2);
+        ctx.fillText("NeuroMark", width / 2, height / 2);
         ctx.lineWidth = Math.max(2, fontSize * 0.05);
         ctx.strokeStyle = "rgba(130, 130, 170, 0.35)";
-        ctx.strokeText("ACM MJCET", width / 2, height / 2);
+        ctx.strokeText("NeuroMark", width / 2, height / 2);
         ctx.restore();
       }
 

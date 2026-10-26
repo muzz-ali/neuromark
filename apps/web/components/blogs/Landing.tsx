@@ -166,7 +166,7 @@ const Blogs: React.FC = () => {
             Blog Articles
           </h1>
           <p className="max-w-2xl text-lg text-slate-600">
-            Insights, tutorials, and stories from the ACM MJCET community
+            Insights, tutorials, and stories from the NeuroMark community
           </p>
         </div>
 

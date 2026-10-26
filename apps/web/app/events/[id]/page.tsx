@@ -84,7 +84,7 @@ const EventPage = ({params}: {params: Promise<{id: string}>}) => {
             {/* Header Section */}
             <div className="p-4 md:p-6 text-white border-b border-gray-700 bg-black/70">
               <h1 className="text-2xl md:text-3xl font-bold mb-2">EVENT REPORT</h1>
-              <p className="text-gray-300 text-sm">ACM MJCET - Muffakham Jah College of Engineering and Technology</p>
+              <p className="text-gray-300 text-sm">NeuroMark - Muffakham Jah College of Engineering and Technology</p>
             </div>
 
             {/* Event Details Section */}
@@ -197,7 +197,7 @@ const EventPage = ({params}: {params: Promise<{id: string}>}) => {
               {/* Footer */}
               <div className="pt-6 mt-6 border-t-2 border-gray-700 text-center">
                 <p className="text-sm text-gray-400 italic">
-                  Organized by ACM MJCET Student Chapter
+                  Organized by NeuroMark Student Chapter
                 </p>
               </div>
             </div>

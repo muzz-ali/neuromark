@@ -32,16 +32,16 @@ const BlogHeader: React.FC = () => {
 
   return (
     <>
-      {/* ACM Header */}
+      {/* NeuroMark Header */}
       <header className="border-b border-slate-200 bg-white shadow-sm sticky top-0 z-40">
         <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 transition-all duration-300 hover:scale-105">
             <div className="flex size-10 items-center justify-center rounded-lg bg-slate-900 font-bold text-white">
-              ACM
+              NeuroMark
             </div>
             <div>
-              <div className="text-lg font-bold leading-tight text-slate-900">ACM MJCET</div>
-              <div className="text-xs text-slate-600">Student Chapter</div>
+              <div className="text-lg font-bold leading-tight text-slate-900">NeuroMark Agency</div>
+              <div className="text-xs text-slate-600">AI & Digital Agency</div>
             </div>
           </Link>
           <div className="flex items-center gap-2 sm:gap-3">

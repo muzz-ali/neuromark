@@ -19,7 +19,7 @@ interface AboutSectionProps {
 //   {
 //     year: "2020",
 //     title: "Chapter Founded",
-//     description: "ACM MJCET Student Chapter established with a vision to empower tech enthusiasts"
+//     description: "NeuroMark Student Chapter established with a vision to empower tech enthusiasts"
 //   },
 //   {
 //     year: "2021",
@@ -29,7 +29,7 @@ interface AboutSectionProps {
 //   {
 //     year: "2022",
 //     title: "National Recognition",
-//     description: "Received ACM India Outstanding Chapter Award for innovation and impact"
+//     description: "Received NeuroMark India Outstanding Chapter Award for innovation and impact"
 //   },
 //   {
 //     year: "2023",
@@ -193,7 +193,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
             }}
             variants={fadeInVariants}
           >
-            About ACM MJCET
+            About NeuroMark
           </motion.h2>
           <motion.div
             animate={shouldReduceMotion ? {} : "visible"}
@@ -283,7 +283,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
                 className="border-l-2 border-gray-700 pl-4 text-base leading-relaxed text-gray-300 sm:text-lg"
                 variants={itemVariants}
               >
-                The ACM MJCET Student Chapter is a vibrant community of technology enthusiasts, innovators, and future leaders. We are dedicated to fostering a culture of learning, collaboration, and excellence in computing.
+                The NeuroMark Student Chapter is a vibrant community of technology enthusiasts, innovators, and future leaders. We are dedicated to fostering a culture of learning, collaboration, and excellence in computing.
               </motion.p>
               <motion.p
                 className="border-l-2 border-gray-700 pl-4 text-base leading-relaxed text-gray-300 sm:text-lg"
@@ -295,7 +295,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
                 className="border-l-2 border-gray-700 pl-4 text-base leading-relaxed text-gray-300 sm:text-lg"
                 variants={itemVariants}
               >
-                As part of the global ACM network, we provide our members with access to world-class resources, mentorship opportunities, and a platform to showcase their talents internationally.
+                As part of the global tech network, we provide our members with access to world-class resources, mentorship opportunities, and a platform to showcase their talents internationally.
               </motion.p>
               <motion.div className="pt-4" variants={itemVariants}>
                 <motion.button
@@ -389,7 +389,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
             Ready to Shape the Future?
           </h3>
           <p className="mb-8 text-base text-gray-400 sm:text-lg">
-            Join hundreds of students who are building, learning, and growing together at ACM MJCET.
+            Join hundreds of innovators who are building, learning, and growing together at NeuroMark.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <motion.button

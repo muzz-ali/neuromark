@@ -607,15 +607,15 @@ const DummyPage = ({ handleLoading }: { handleLoading?: any }) => {
             ))}
           </div>
 
-          {/* ACM MJCET Badge */}
+          {/* NeuroMark Badge */}
           <div className="absolute bottom-20 sm:bottom-24 md:bottom-28 left-1/2 transform -translate-x-1/2">
             {/* <div className="relative group"> */}
               {/* <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div> */}
               {/* <div className="relative bg-black/60 backdrop-blur-xl border-2 border-cyan-400/40 rounded-full px-8 py-3 shadow-2xl"> */}
                 {/* <p className="text-cyan-300 font-mono text-sm sm:text-base md:text-lg tracking-widest font-bold"> */}
-                  {/* ACM MJCET */}
+                  {/* NeuroMark */}
                   <Image
-                    alt="ACM Logo"
+                    alt="NeuroMark Logo"
                     height={280}
                     width={320}
                     src="/logo_without_bg.png"
