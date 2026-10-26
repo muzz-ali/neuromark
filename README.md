@@ -277,15 +277,6 @@ All PRs should be reviewed within **5 days** of submission.
 In case of urgent fixes, the Tech Captain may merge directly to production.
 
 ---
-## 🏅 Top Contributers
-
-<a href="https://github.com/acmmjcet/main-website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=acmmjcet/main-website" alt="contrib.rocks image" />
-</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
 
 ## 🧾 License
 
