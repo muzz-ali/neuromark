@@ -17,7 +17,7 @@ export default function Homepage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <Navbar isScrolled={isScrolled} />
+      <Navbar />
 
       <main className="relative">
         {/* Hero Section */}
