@@ -103,9 +103,9 @@ export default function Homepage() {
                     <line x1="9" y1="21" x2="21" y2="21"/>
                   </svg>
                 </div>
-                <h3 className="font-manrope font-bold text-xl mb-3 text-white">Business Websites</h3>
+                <h3 className="font-manrope font-bold text-xl mb-3 text-white">E-Commerce</h3>
                 <p className="text-zinc-400 text-base leading-relaxed">
-                  Professional websites for local and growing businesses that establish credibility and drive growth.
+                  Modern online stores for businesses ready to sell online with secure checkout and great UX.
                 </p>
                 <a href="#contact" className="mt-4 inline-flex items-center gap-2 text-tech-blue text-sm font-medium hover:underline">
                   Learn More
@@ -124,9 +124,9 @@ export default function Homepage() {
                     <circle cx="12" cy="12" r="3"/>
                   </svg>
                 </div>
-                <h3 className="font-manrope font-bold text-xl mb-3 text-white">E-Commerce</h3>
+                <h3 className="font-manrope font-bold text-xl mb-3 text-white">Redesigns</h3>
                 <p className="text-zinc-400 text-base leading-relaxed">
-                  Modern online stores for businesses ready to sell online with secure checkout and great UX.
+                  Transform outdated websites into modern digital experiences that engage and convert visitors.
                 </p>
                 <a href="#contact" className="mt-4 inline-flex items-center gap-2 text-tech-blue text-sm font-medium hover:underline">
                   Learn More
@@ -141,14 +141,13 @@ export default function Homepage() {
               >
                 <div className="h-12 w-12 rounded-2xl bg-tech-blue/10 flex items-center justify-center mb-6 group-hover:bg-tech-blue/20 transition-colors">
                   <svg className="h-6 w-6 text-tech-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                    <line x1="3" y1="9" x2="21" y2="9"/>
-                    <line x1="9" y1="21" x2="21" y2="21"/>
+                    <path d="M12 5v14M5 12h14"/>
+                    <circle cx="12" cy="12" r="3"/>
                   </svg>
                 </div>
-                <h3 className="font-manrope font-bold text-xl mb-3 text-white">Redesigns</h3>
+                <h3 className="font-manrope font-bold text-xl mb-3 text-white">Business Websites</h3>
                 <p className="text-zinc-400 text-base leading-relaxed">
-                  Transform outdated websites into modern digital experiences that engage and convert visitors.
+                  Professional websites for local and growing businesses that establish credibility and drive growth.
                 </p>
                 <a href="#contact" className="mt-4 inline-flex items-center gap-2 text-tech-blue text-sm font-medium hover:underline">
                   Learn More
@@ -541,22 +540,19 @@ export default function Homepage() {
                   </svg>
                 </div>
                 <h3 className="font-manrope font-bold text-xl mb-4 text-white">STARTER</h3>
-                <p className="font-manrope text-5xl font-extrabold text-tech-blue mb-2">₹10,000</p>
+                <p className="font-manrope text-5xl font-extrabold text-tech-blue mb-2">₹15,000</p>
                 <p className="text-zinc-400 text-sm mb-8">
                   For businesses that need a professional online presence.
                 </p>
                 <ul className="space-y-3 text-zinc-400 text-sm mb-8">
-                  <li>4–5 pages</li>
-                  <li>Custom responsive website design</li>
-                  <li>Mobile + desktop responsive layout</li>
-                  <li>Domain + hosting for 1 year</li>
-                  <li>SSL/security setup</li>
-                  <li>WhatsApp / Call buttons</li>
-                  <li>Google Maps integration</li>
-                  <li>Contact form</li>
-                  <li>Basic SEO setup</li>
-                  <li>1 revision round</li>
-                  <li>Website launch/setup</li>
+                  <li>Up to 5 pages</li>
+                  <li>Professional, mobile-responsive website</li>
+                  <li>Custom domain and hosting for the first year</li>
+                  <li>WhatsApp and click-to-call integration</li>
+                  <li>Contact form and Google Maps integration</li>
+                  <li>Basic on-page SEO setup</li>
+                  <li>SSL and launch testing</li>
+                  <li>2 rounds of revisions</li>
                 </ul>
                 <a
                   href="/contact"
@@ -581,23 +577,20 @@ export default function Homepage() {
                   </svg>
                 </div>
                 <h3 className="font-manrope font-bold text-xl mb-4 text-white">GROWTH</h3>
-                <p className="font-manrope text-5xl font-extrabold text-white mb-2">₹15,000</p>
+                <p className="font-manrope text-5xl font-extrabold text-white mb-2">₹30,000</p>
                 <p className="text-zinc-400 text-sm mb-8">
                   For businesses that want a stronger website and better lead generation.
                 </p>
                 <ul className="space-y-3 text-zinc-400 text-sm mb-8">
-                  <li>Everything in Starter</li>
-                  <li>7–8 pages</li>
+                  <li>Up to 8–10 pages</li>
                   <li>More customized visual design</li>
-                  <li>Enhanced animations/interactions</li>
-                  <li>Testimonials section</li>
-                  <li>Gallery/portfolio section</li>
-                  <li>Lead-focused page structure</li>
-                  <li>Google Analytics setup</li>
-                  <li>Google Search Console setup</li>
-                  <li>Stronger on-page SEO</li>
-                  <li>2 revision rounds</li>
-                  <li>30 days post-launch support</li>
+                  <li>Custom sections and polished animations</li>
+                  <li>Project gallery or portfolio</li>
+                  <li>Lead-generation forms and WhatsApp integration</li>
+                  <li>Analytics integration and SEO foundations</li>
+                  <li>Domain and hosting for the first year</li>
+                  <li>3 rounds of revisions</li>
+                  <li>30 days of post-launch bug support</li>
                 </ul>
                 <a
                   href="/contact"
@@ -622,24 +615,19 @@ export default function Homepage() {
                   </svg>
                 </div>
                 <h3 className="font-manrope font-bold text-xl mb-4 text-white">PREMIUM</h3>
-                <p className="font-manrope text-5xl font-extrabold text-tech-blue mb-2">₹30,000</p>
+                <p className="font-manrope text-5xl font-extrabold text-tech-blue mb-2">₹40,000+</p>
                 <p className="text-zinc-400 text-sm mb-8">
                   For businesses that need a more advanced/custom digital presence.
                 </p>
                 <ul className="space-y-3 text-zinc-400 text-sm mb-8">
-                  <li>Everything in Growth</li>
-                  <li>Up to 10–12 pages depending on project scope</li>
-                  <li>Fully custom premium UI</li>
-                  <li>Advanced animations and interactions</li>
-                  <li>Blog/CMS-ready structure where appropriate</li>
-                  <li>Advanced forms and lead flows</li>
-                  <li>Third-party/API integrations where required</li>
-                  <li>Advanced SEO structure</li>
-                  <li>Analytics + Search Console</li>
-                  <li>Conversion-focused UX</li>
-                  <li>3 revision rounds</li>
-                  <li>Priority post-launch support</li>
-                  <li>Extended maintenance/support period</li>
+                  <li>Bespoke design and a distinctive brand experience</li>
+                  <li>Advanced interactions and animations where appropriate</li>
+                  <li>Larger portfolio, service catalogue, or case-study sections</li>
+                  <li>Additional integrations based on requirements</li>
+                  <li>More extensive SEO and performance setup</li>
+                  <li>Domain and hosting for the first year</li>
+                  <li>3 rounds of revisions</li>
+                  <li>60 days of post-launch bug support</li>
                 </ul>
                 <a
                   href="/contact"
@@ -671,7 +659,7 @@ export default function Homepage() {
                     </svg>
                   </summary>
                   <p className="mt-3 text-zinc-400 text-sm">
-                    Professional websites from ₹9,999. The final cost depends on complexity, features, and customization requirements.
+                    Professional websites from ₹15,000. The final cost depends on complexity, features, and customization requirements.
                   </p>
                 </details>
 
@@ -695,7 +683,7 @@ export default function Homepage() {
                     </svg>
                   </summary>
                   <p className="mt-3 text-zinc-400 text-sm">
-                    Yes, we handle hosting setup and configuration as part of our launch package.
+                    Yes, domain and hosting setup are included for the first year as part of our launch package.
                   </p>
                 </details>
 
@@ -707,7 +695,7 @@ export default function Homepage() {
                     </svg>
                   </summary>
                   <p className="mt-3 text-zinc-400 text-sm">
-                    Domain registration can be included or we can work with your existing domain.
+                    Yes, a custom domain is included for the first year. We can also work with your existing domain.
                   </p>
                 </details>
 

@@ -25,7 +25,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ member }) => {
           </div>
 
           <div className="p-5 relative z-10">
-            <h3 className="text-white font-semibold text-lg mb-1 group-hover:text-blue-100 transition-colors">
+            <h3 className="text-foreground font-semibold text-lg mb-1 group-hover:text-blue-100 transition-colors">
               {member.name}
             </h3>
             <p className="text-blue-500 text-sm font-medium uppercase tracking-wide">

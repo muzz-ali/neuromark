@@ -261,7 +261,7 @@ const FacultyCoordinator = () => {
               </div>
 
               {/* Name and title */}
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-2 tracking-tight leading-tight">
                 {data.name}
               </h2>
               <p className={`${isFirst ? 'text-blue-500' : 'text-blue-600'} text-sm md:text-base mb-6 md:mb-7 font-light tracking-wide`}>

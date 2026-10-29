@@ -146,7 +146,7 @@ const Blogs: React.FC = () => {
           <p className="mb-6 text-slate-600">{error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="rounded-lg bg-slate-900 px-6 py-3 font-semibold text-white transition-colors hover:bg-slate-800"
+            className="rounded-lg bg-slate-900 px-6 py-3 font-semibold text-foreground transition-colors hover:bg-slate-800"
           >
             Try Again
           </button>
@@ -201,7 +201,7 @@ const Blogs: React.FC = () => {
                 onClick={() => setSelectedCategory(cat)}
                 className={`rounded-lg px-4 py-2 text-sm font-semibold transition-all ${
                   selectedCategory === cat
-                    ? "bg-slate-900 text-white"
+                    ? "bg-slate-900 text-foreground"
                     : "border border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
                 }`}
               >
@@ -230,7 +230,7 @@ const Blogs: React.FC = () => {
                 >
                   {/* Featured Badge */}
                   {blog.isFeatured && (
-                    <div className="absolute left-4 top-4 z-10 flex items-center gap-1 rounded-md bg-slate-900 px-3 py-1 text-xs font-bold text-white">
+                    <div className="absolute left-4 top-4 z-10 flex items-center gap-1 rounded-md bg-slate-900 px-3 py-1 text-xs font-bold text-foreground">
                       <TrendingUp className="size-3" />
                       Featured
                     </div>
@@ -303,7 +303,7 @@ const Blogs: React.FC = () => {
                       </span>
                       <a
                         href={`/blogs/${blog.slug}`}
-                        className="inline-flex items-center gap-1 rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition-all hover:gap-2 hover:bg-slate-800"
+                        className="inline-flex items-center gap-1 rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-foreground transition-all hover:gap-2 hover:bg-slate-800"
                       >
                         Read
                         <ArrowRight className="size-4" />
@@ -328,7 +328,7 @@ const Blogs: React.FC = () => {
                 setSearchTerm("");
                 setSelectedCategory("all");
               }}
-              className="rounded-lg bg-slate-900 px-6 py-3 font-semibold text-white transition-colors hover:bg-slate-800"
+              className="rounded-lg bg-slate-900 px-6 py-3 font-semibold text-foreground transition-colors hover:bg-slate-800"
             >
               Clear All Filters
             </button>

@@ -385,7 +385,7 @@ export default function Hero() {
           className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
           style={{ opacity: textOpacity }}
         >
-          <h1 className="mb-8 text-5xl font-black uppercase tracking-tight text-white md:text-7xl lg:text-8xl">
+          <h1 className="mb-8 text-5xl font-black uppercase tracking-tight text-foreground md:text-7xl lg:text-8xl">
             <span
               className="bg-gradient-to-r from-neutral-200 via-white to-neutral-300 bg-clip-text text-transparent"
               style={{

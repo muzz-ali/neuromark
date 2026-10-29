@@ -93,7 +93,7 @@ const ExecomCard: React.FC<ExecomCardProps> = ({ member, index }) => {
             transform: "translateZ(60px)",
           }}
         >
-          <h3 className="text-white font-semibold text-lg mb-1">
+          <h3 className="text-foreground font-semibold text-lg mb-1">
             {member.name}
           </h3>
           <p className="text-blue-400 text-xs font-medium uppercase tracking-wide">

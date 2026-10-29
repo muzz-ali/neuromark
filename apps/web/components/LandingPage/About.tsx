@@ -186,7 +186,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
           </motion.div>
           <motion.h2
             animate={shouldReduceMotion ? {} : "visible"}
-            className="mb-4 text-5xl font-black leading-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
+            className="mb-4 text-5xl font-black leading-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl"
             initial="hidden"
             style={{
               textShadow: "0 0 40px rgba(255, 255, 255, 0.1)"
@@ -299,7 +299,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
               </motion.p>
               <motion.div className="pt-4" variants={itemVariants}>
                 <motion.button
-                  className="group relative overflow-hidden border border-gray-700 bg-gradient-to-r from-gray-900 to-black px-8 py-4 font-bold uppercase tracking-wider text-white shadow-lg transition-all hover:border-gray-500 hover:shadow-gray-800/50"
+                  className="group relative overflow-hidden border border-gray-700 bg-gradient-to-r from-gray-900 to-black px-8 py-4 font-bold uppercase tracking-wider text-foreground shadow-lg transition-all hover:border-gray-500 hover:shadow-gray-800/50"
                   type="button"
                   onClick={() => window.location.href = "/join"}
                   whileHover={{ scale: 1.02 }}
@@ -324,7 +324,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
         </div>
 
         {/* <div data-animate className="mb-12 text-center">
-          <h3 className="text-4xl font-black text-white sm:text-5xl lg:text-6xl">
+          <h3 className="text-4xl font-black text-foreground sm:text-5xl lg:text-6xl">
             Our{" "}
             <span className="relative inline-block">
               <span className="relative z-10">Journey</span>
@@ -356,11 +356,11 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
                 <div
                   className="mb-4 inline-block border border-gray-700 bg-gradient-to-br from-gray-900 to-black px-4 py-2 transition-transform duration-300 group-hover:scale-105"
                 >
-                  <span className="text-2xl font-black text-white">
+                  <span className="text-2xl font-black text-foreground">
                     {milestone.year}
                   </span>
                 </div>
-                <h4 className="mb-3 text-xl font-bold text-white transition-colors duration-300 group-hover:text-gray-300">
+                <h4 className="mb-3 text-xl font-bold text-foreground transition-colors duration-300 group-hover:text-gray-300">
                   {milestone.title}
                 </h4>
                 <p className="text-sm leading-relaxed text-gray-400">
@@ -385,7 +385,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
         >
           <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
-          <h3 className="mb-4 text-3xl font-black text-white sm:text-4xl md:text-5xl">
+          <h3 className="mb-4 text-3xl font-black text-foreground sm:text-4xl md:text-5xl">
             Ready to Shape the Future?
           </h3>
           <p className="mb-8 text-base text-gray-400 sm:text-lg">
@@ -402,7 +402,7 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
               Get Started
             </motion.button>
             <motion.button
-              className="w-full border border-gray-700 bg-gradient-to-r from-gray-900 to-black px-8 py-4 font-bold uppercase tracking-wider text-white transition-all hover:border-gray-600 hover:from-gray-800 hover:to-gray-900 sm:w-auto"
+              className="w-full border border-gray-700 bg-gradient-to-r from-gray-900 to-black px-8 py-4 font-bold uppercase tracking-wider text-foreground transition-all hover:border-gray-600 hover:from-gray-800 hover:to-gray-900 sm:w-auto"
               type="button"
               onClick={() => window.location.href = "/about"}
               whileHover={{ scale: 1.05, y: -2 }}

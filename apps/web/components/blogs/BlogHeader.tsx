@@ -36,7 +36,7 @@ const BlogHeader: React.FC = () => {
       <header className="border-b border-slate-200 bg-white shadow-sm sticky top-0 z-40">
         <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 transition-all duration-300 hover:scale-105">
-            <div className="flex size-10 items-center justify-center rounded-lg bg-slate-900 font-bold text-white">
+            <div className="flex size-10 items-center justify-center rounded-lg bg-slate-900 font-bold text-foreground">
               NeuroMark
             </div>
             <div>
@@ -47,7 +47,7 @@ const BlogHeader: React.FC = () => {
           <div className="flex items-center gap-2 sm:gap-3">
             <button
               aria-label="Open menu"
-              className="group flex items-center gap-1 sm:gap-1.5 rounded-full bg-slate-900/90 px-3 py-2 sm:px-4 sm:py-2.5 text-white backdrop-blur-sm transition-all duration-300 hover:bg-slate-800"
+              className="group flex items-center gap-1 sm:gap-1.5 rounded-full bg-slate-900/90 px-3 py-2 sm:px-4 sm:py-2.5 text-foreground backdrop-blur-sm transition-all duration-300 hover:bg-slate-800"
               type="button"
               onClick={() => setIsMenuOpen(true)}
             >
@@ -59,7 +59,7 @@ const BlogHeader: React.FC = () => {
               </div>
             </button>
             <Link
-              className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap rounded-full bg-slate-900 px-3 py-2 sm:px-4 sm:py-2.5 text-[10px] sm:text-xs font-bold tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-slate-800 hover:shadow-lg"
+              className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap rounded-full bg-slate-900 px-3 py-2 sm:px-4 sm:py-2.5 text-[10px] sm:text-xs font-bold tracking-wider text-foreground transition-all duration-300 hover:scale-105 hover:bg-slate-800 hover:shadow-lg"
               href="/join"
             >
               <svg
@@ -91,7 +91,7 @@ const BlogHeader: React.FC = () => {
         {/* Close Button */}
         <button
           aria-label="Close menu"
-          className="absolute right-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-full text-white transition-all duration-300 hover:bg-white/10 sm:right-6 sm:top-6 sm:h-12 sm:w-12"
+          className="absolute right-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-full text-foreground transition-all duration-300 hover:bg-white/10 sm:right-6 sm:top-6 sm:h-12 sm:w-12"
           type="button"
           onClick={() => setIsMenuOpen(false)}
         >
@@ -149,7 +149,7 @@ const BlogHeader: React.FC = () => {
                             }}
                           />
                         </div>
-                        <span className="relative text-3xl font-black tracking-wider text-white transition-all duration-200 group-hover:tracking-widest group-hover:text-white/90 sm:text-4xl md:text-5xl">
+                        <span className="relative text-3xl font-black tracking-wider text-foreground transition-all duration-200 group-hover:tracking-widest group-hover:text-foreground/90 sm:text-4xl md:text-5xl">
                           {link.label}
                           <span className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100" />
                           <span className="absolute -bottom-1 left-0 h-1 w-0 bg-gradient-to-r from-white via-white/50 to-transparent transition-all duration-500 group-hover:w-full" />
@@ -175,7 +175,7 @@ const BlogHeader: React.FC = () => {
               }}
             >
               <Link
-                className="group relative flex items-center space-x-2 overflow-hidden rounded-full border-2 border-white/30 bg-white/5 px-8 py-4 text-base font-bold tracking-widest text-white backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:border-white hover:bg-white hover:text-slate-900 sm:px-10 sm:py-4 sm:text-lg"
+                className="group relative flex items-center space-x-2 overflow-hidden rounded-full border-2 border-white/30 bg-white/5 px-8 py-4 text-base font-bold tracking-widest text-foreground backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:border-white hover:bg-white hover:text-slate-900 sm:px-10 sm:py-4 sm:text-lg"
                 href="/join"
                 onClick={handleLinkClick}
               >

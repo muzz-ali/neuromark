@@ -190,7 +190,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
         <div className='mx-auto max-w-7xl px-4 pt-2'>
             <Link
                 href="/blogs"
-                className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-white"
+                className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-foreground"
               >
                 <ArrowLeft size={18} />
                 <span className="font-medium">Back to Blogs</span>
@@ -218,7 +218,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
       <div className='mx-auto max-w-7xl px-4 pt-2'>
             <Link
                 href="/blogs"
-                className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-white"
+                className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-foreground"
               >
                 <ArrowLeft size={18} />
                 <span className="font-medium">Back to Blogs</span>
@@ -235,7 +235,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
             <p className="mb-6 text-red-700">{error}</p>
             <button 
               onClick={() => window.location.reload()}
-              className="rounded-lg bg-red-600 px-6 py-2.5 font-semibold text-white transition-colors hover:bg-red-700"
+              className="rounded-lg bg-red-600 px-6 py-2.5 font-semibold text-foreground transition-colors hover:bg-red-700"
             >
               Try Again
             </button>
@@ -252,7 +252,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
       <div className='mx-auto max-w-7xl px-4 pt-2'>
             <Link
                 href="/blogs"
-                className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-white"
+                className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-foreground"
               >
                 <ArrowLeft size={18} />
                 <span className="font-medium">Back to Blogs</span>
@@ -274,7 +274,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
       <div className='mx-auto max-w-7xl px-4 pt-2'>
             <Link
                 href="/blogs"
-                className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-white"
+                className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-foreground"
               >
                 <ArrowLeft size={18} />
                 <span className="font-medium">Back to Blogs</span>
@@ -287,11 +287,11 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
           <article className="lg:col-span-8">
             {/* Category Badge */}
             <div className="mb-6 flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-white">
+              <span className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1 text-sm font-semibold text-foreground">
                 {blog.category}
               </span>
               {blog.isFeatured && (
-                <span className="inline-flex items-center gap-1.5 rounded-md bg-slate-700 px-3 py-1 text-sm font-semibold text-white">
+                <span className="inline-flex items-center gap-1.5 rounded-md bg-slate-700 px-3 py-1 text-sm font-semibold text-foreground">
                   <TrendingUp size={14} />
                   Featured
                 </span>
@@ -368,7 +368,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
                     href={blog.externalUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2.5 font-semibold text-white transition-colors hover:bg-slate-800"
+                    className="flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2.5 font-semibold text-foreground transition-colors hover:bg-slate-800"
                   >
                     Visit <ExternalLink size={16} />
                   </a>
@@ -384,7 +384,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
                     onClick={() => handleVote('up')}
                     className={`flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition-colors ${
                       userVote === 'up'
-                        ? 'bg-slate-900 text-white'
+                        ? 'bg-slate-900 text-foreground'
                         : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-300'
                     }`}
                   >
@@ -395,7 +395,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
                     onClick={() => handleVote('down')}
                     className={`flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition-colors ${
                       userVote === 'down'
-                        ? 'bg-slate-900 text-white'
+                        ? 'bg-slate-900 text-foreground'
                         : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-300'
                     }`}
                   >
@@ -412,7 +412,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
                     onClick={() => setIsBookmarked(!isBookmarked)}
                     className={`flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition-colors ${
                       isBookmarked
-                        ? 'bg-slate-900 text-white'
+                        ? 'bg-slate-900 text-foreground'
                         : 'border border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
                     }`}
                   >
@@ -454,7 +454,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
                     className="size-16 rounded-full border-2 border-slate-300 object-cover"
                   />
                 ) : (
-                  <div className="flex size-16 items-center justify-center rounded-full border-2 border-slate-300 bg-slate-900 text-xl font-bold text-white">
+                  <div className="flex size-16 items-center justify-center rounded-full border-2 border-slate-300 bg-slate-900 text-xl font-bold text-foreground">
                     {blog.authorName.charAt(0).toUpperCase()}
                   </div>
                 )}
@@ -525,7 +525,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
             )}
 
             {/* Share Widget */}
-            {/* <div className="rounded-lg border border-slate-200 bg-slate-900 p-5 text-white">
+            {/* <div className="rounded-lg border border-slate-200 bg-slate-900 p-5 text-foreground">
               <h3 className="mb-4 font-bold">Share this article</h3>
               <div className="grid grid-cols-2 gap-2">
                 <button className="rounded-lg bg-white/10 px-3 py-2.5 text-sm font-semibold transition-colors hover:bg-white/20">
@@ -545,14 +545,14 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
 
             {/* NeuroMark Info Box */}
             <div className="rounded-lg border-2 border-slate-900 bg-slate-50 p-5">
-              <div className="mb-3 flex size-12 items-center justify-center rounded-lg bg-slate-900 font-bold text-white">
+              <div className="mb-3 flex size-12 items-center justify-center rounded-lg bg-slate-900 font-bold text-foreground">
                 NeuroMark
               </div>
               <h3 className="mb-2 font-bold text-slate-900">NeuroMark Agency</h3>
               <p className="mb-4 text-sm leading-relaxed text-slate-700">
                 AI & Digital Agency empowering future tech leaders.
               </p>
-              <button onClick={() => window.location.href = "/join"} className="w-full rounded-lg bg-slate-900 px-4 py-2.5 font-semibold text-white transition-colors hover:bg-slate-800">
+              <button onClick={() => window.location.href = "/join"} className="w-full rounded-lg bg-slate-900 px-4 py-2.5 font-semibold text-foreground transition-colors hover:bg-slate-800">
                 Join Our Community
               </button>
             </div>
@@ -572,7 +572,7 @@ const CompletePage: React.FC<CompletePageProps> = ({ slug = "deep-tech-transform
       <button
         onClick={scrollToTop}
         aria-label="Scroll to top"
-        className={`fixed bottom-6 left-1/2 z-50 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full bg-slate-900 text-white shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-110 hover:shadow-xl ${
+        className={`fixed bottom-6 left-1/2 z-50 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full bg-slate-900 text-foreground shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-110 hover:shadow-xl ${
           showScrollTop
             ? 'translate-y-0 opacity-100'
             : 'translate-y-16 opacity-0 pointer-events-none'

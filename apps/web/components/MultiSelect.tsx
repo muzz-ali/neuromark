@@ -36,8 +36,8 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
           className={`relative px-6 py-2.5 rounded-full text-sm font-medium
                      transition-all duration-300 border ${
                        isAllSelected
-                         ? "text-white bg-zinc-800 border-blue-500/50 shadow-lg shadow-blue-900/20"
-                         : "text-zinc-400 bg-transparent border-zinc-700 hover:text-white hover:border-zinc-600"
+                         ? "text-foreground bg-zinc-800 border-blue-500/50 shadow-lg shadow-blue-900/20"
+                         : "text-zinc-400 bg-transparent border-zinc-700 hover:text-foreground hover:border-zinc-600"
                      }`}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -54,8 +54,8 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
               className={`relative px-6 py-2.5 rounded-full text-sm font-medium
                          transition-all duration-300 border ${
                            isSelected
-                             ? "text-white bg-zinc-800 border-blue-500/50 shadow-lg shadow-blue-900/20"
-                             : "text-zinc-400 bg-transparent border-zinc-700 hover:text-white hover:border-zinc-600"
+                             ? "text-foreground bg-zinc-800 border-blue-500/50 shadow-lg shadow-blue-900/20"
+                             : "text-zinc-400 bg-transparent border-zinc-700 hover:text-foreground hover:border-zinc-600"
                          }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
